@@ -1,0 +1,33 @@
+{
+  "name": "bandmate-rehearsal-app",
+  "version": "1.0.0",
+  "description": "A web application for automatically scheduling band rehearsals, sending reminders, tracking attendance, and suggesting optimal rehearsal times.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxaginfo/bandmate-rehearsal-app.git"
+  },
+  "keywords": [
+    "band",
+    "rehearsal",
+    "scheduler",
+    "music",
+    "calendar"
+  ],
+  "author": "DX AG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxaginfo/bandmate-rehearsal-app/issues"
+  },
+  "homepage": "https://github.com/dxaginfo/bandmate-rehearsal-app#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
